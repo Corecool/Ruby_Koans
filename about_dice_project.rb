@@ -13,7 +13,7 @@ class DiceSet
   def roll(n)
     _roll(n) { |n|
       @values.clear
-      (1..n).each { |n| cur = rand(1..6); @values << cur}
+      n.times { |i| cur = rand(1..6); @values << cur}
     }
   end
   
